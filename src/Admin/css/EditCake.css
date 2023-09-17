@@ -1,0 +1,169 @@
+.edit-cake-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.edit-cake-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 0 0.7px black;
+  /* text-decoration: underline; */
+}
+
+.edit-cake-form {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 10px;
+}
+
+/* left */
+.left {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-image {
+  position: relative;
+  height: 250px;
+}
+
+.edit-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* IMAGE OPTIONS */
+.edit-image-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.edit-image-options svg {
+  font-size: 3rem;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.edit-image-options svg:first-child {
+  background-color: orange;
+}
+
+.edit-image-options svg:last-child {
+  background-color: rgb(235, 0, 0);
+}
+
+.edit-image-file-selector {
+  position: absolute;
+  left: -10000px;
+}
+
+/* right */
+.right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.right div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.right div:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+.right div:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+.right div label {
+  width: 30%;
+  display: flex;
+  font-size: 2rem;
+}
+
+.right div input,
+.right div textarea,
+.right div select {
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: inherit;
+}
+
+.right div textarea {
+  resize: none;
+}
+
+.right .edit-description {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* BUTTONS */
+.right .edit-cake-buttons {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  max-width: 500px;
+}
+
+.edit-cake-buttons button {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.edit-cake-buttons button:first-child {
+  background-color: green;
+}
+
+.edit-cake-buttons button:last-child {
+  background-color: rgb(226, 0, 0);
+}
+
+@media screen and (max-width: 768px) {
+  .edit-cake-container {
+    height: auto;
+    padding-top: 5px;
+  }
+
+  .edit-cake-form {
+    display: block;
+  }
+
+  .left {
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .edit-image {
+    height: 200px;
+  }
+
+  .right {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+}

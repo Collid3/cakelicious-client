@@ -1,0 +1,13 @@
+.edit-cart-item-container {
+	min-height: 100vh;
+	padding-top: 2%;
+}
+
+.edit-cart-item-container h1 {
+	margin-bottom: 4rem;
+}
+
+.edit-page-details-container {
+	padding-top: 2rem;
+	min-height: 0;
+}

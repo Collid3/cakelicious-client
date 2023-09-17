@@ -1,0 +1,82 @@
+.checkout-main-container {
+  min-height: 100vh;
+}
+
+.checkout-main-container header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.checkout-main-container h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.checkout-container {
+  display: flex;
+  padding: 5px;
+  max-width: 1500px;
+  margin: 0 auto;
+  gap: 15px;
+}
+
+.checkout-container-left {
+  flex: 2;
+  padding: 20px 10px;
+}
+
+.checkout-container-left h2,
+.checkout-container-right h2 {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.checkout-container-left section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.checkout-container-left section div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.checkout-container-left section div label {
+  display: block;
+}
+
+.checkout-container-left section div input {
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.checkout-container-left button {
+  width: 200px;
+  padding: 20px;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 2px white;
+  align-self: flex-end;
+}
+
+.autocomplete-dropdown-container {
+  /* background-color: gray; */
+  color: black;
+}
+
+/* CHECKOUT RIGHT */
+.checkout-container-right {
+  flex: 1;
+  padding: 20px 10px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 992px) {
+  .checkout-container-left section {
+    gap: 16px;
+  }
+}

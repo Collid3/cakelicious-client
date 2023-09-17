@@ -1,0 +1,272 @@
+/* GENERAL STYLE */
+.main-container aside {
+  flex: 0.8;
+}
+
+main {
+  flex-grow: 2;
+  text-align: center;
+  border-radius: 2px;
+  align-items: start;
+}
+
+.cakes-container-header {
+  user-select: none;
+  position: sticky;
+  top: 0;
+  padding: 10px 10px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cakes-container-header h2,
+.cakes-container-header h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.cakes-container-header input {
+  width: 50%;
+  padding: 10px 6px;
+  border-radius: 10px;
+}
+
+/* CAKES */
+.cakes-main-container {
+  flex: 3;
+  height: 100%;
+}
+
+.cakes {
+  width: 100%;
+  max-width: 450px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 40%);
+  gap: 20px 10px;
+  margin: 0 auto;
+}
+
+.cake figure {
+  border-radius: 10px;
+  width: 100%;
+  background-color: aliceblue;
+  padding: 5px;
+  padding-bottom: 7px;
+  max-width: 180px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.cakes img {
+  border-radius: 5px 5px 0 0;
+}
+
+.cakes figcaption > h3 {
+  margin: 8px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 132, 153);
+}
+
+.price-buy {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 5px;
+}
+
+.price-buy p {
+  color: black;
+}
+
+.price-buy button {
+  font-size: inherit;
+  padding: 3px;
+  width: 45%;
+  background-color: green;
+  color: white;
+  margin: 0 auto;
+  margin-top: 2px;
+}
+
+/* MESSAGE */
+.message-form {
+  padding-bottom: 5px;
+  margin-top: 20px;
+  border-top: 1px solid black;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.message-form h3 {
+  margin: 1rem 0;
+}
+
+.message-form textarea {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 15px;
+  resize: none;
+  border-radius: 15px;
+  box-shadow: 0 0 4px;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: inherit;
+}
+
+.message-buttons {
+  margin: 0 auto;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 576px) {
+  .cakes {
+    grid-template-columns: repeat(auto-fit, 30%);
+    max-width: none;
+  }
+
+  .cake figure {
+    max-width: 250px;
+    height: 235px;
+  }
+
+  .cake figure img {
+    height: 63%;
+  }
+
+  /* MESSAGE */
+  .message-form textarea {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    flex-grow: 0;
+  }
+
+  .main aside {
+    padding-right: 25px;
+  }
+
+  .cakes {
+    grid-template-columns: repeat(auto-fit, 30%);
+    gap: 20px 15px;
+    margin: auto;
+  }
+
+  .cakes figure {
+    width: 100%;
+    max-width: 300px;
+    height: 235px;
+  }
+
+  .cake figure img {
+    height: 62%;
+  }
+
+  .message-form textarea {
+    width: 500px;
+  }
+
+  .price-buy button {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    flex-grow: 2;
+    display: flex;
+  }
+
+  .cakes {
+    grid-template-columns: repeat(auto-fit, 40%);
+  }
+
+  .cakes-main-container {
+    border-left: 2px solid white;
+  }
+
+  .cakes li {
+    width: 100%;
+  }
+
+  .cakes figure {
+    height: 380px;
+    width: 100%;
+  }
+
+  .cakes figure img {
+    height: 75%;
+  }
+
+  .cake figure button {
+    padding: 4px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cakes {
+    grid-template-columns: repeat(auto-fit, 25%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-grow: 0;
+  }
+
+  .cakes {
+    grid-template-columns: repeat(auto-fit, 45%);
+  }
+
+  .cakes-container-header {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .cakes-container-header input {
+    width: 100%;
+  }
+
+  .cakes-main-container {
+    border-left: none;
+  }
+
+  .cakes figure {
+    height: 250px;
+    font-size: 1rem;
+  }
+
+  .cakes img {
+    height: 65%;
+  }
+
+  .price-buy button {
+    width: 40%;
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cakes {
+    grid-template-columns: repeat(auto-fit, 30%);
+  }
+
+  .cakes figure img {
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .cakes {
+    grid-template-columns: repeat(auto-fit, 45%);
+  }
+}

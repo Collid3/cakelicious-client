@@ -1,0 +1,217 @@
+/* RESET */
+li {
+  list-style: none;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 2px solid white;
+  background-color: steelblue;
+}
+
+/* HEADER */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LEFT SIDE HEADER */
+.left-header {
+  width: max-content;
+}
+
+.left-header .logo {
+  width: 80px;
+  height: 45px;
+}
+
+.left-header .logo img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* RIGHT SIDE HEADER */
+.right-header {
+  width: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  gap: 10px;
+  padding-right: 15px;
+}
+
+.right-header a {
+  color: white;
+}
+
+.right-header.loggedin {
+  width: 145px;
+}
+
+.cart-navigate {
+  display: flex;
+  position: relative;
+}
+
+.cart-items-number {
+  background-color: blue;
+  font-size: 1rem;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  display: grid;
+  place-content: center;
+  position: absolute;
+  right: -10px;
+  top: -5px;
+}
+
+.right-header .profile {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.right-header .profile div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu-bar {
+  font-size: 1.8rem;
+}
+
+.admin-button {
+  border-radius: 2px;
+  padding: 2px 10px;
+  background-color: hotpink;
+  display: grid;
+  place-content: center;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 576px) {
+  /* RIGHT HEADER */
+  .right-header {
+    width: 100px;
+    font-size: 1.7rem;
+    gap: 5px;
+  }
+
+  .right-header.loggedin {
+    width: 160px;
+  }
+
+  .right-header .cart-items-number {
+    width: 15px;
+    height: 15px;
+  }
+
+  .right-header .profile div {
+    gap: 16px;
+  }
+
+  .menu-bar {
+    font-size: 2rem;
+  }
+
+  .admin-button {
+    padding: 2px 10px;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .left-header .logo {
+    width: 100px;
+    height: 60px;
+  }
+
+  /* RIGHT HEADER */
+  .right-header {
+    font-size: 1.8rem;
+    width: 105px;
+  }
+
+  .right-header.loggedin {
+    width: 190px;
+  }
+
+  .right-header .cart-items-number {
+    font-size: 1.1rem;
+    width: 16px;
+    height: 16px;
+  }
+
+  .right-header .profile {
+    padding: 10px;
+  }
+
+  .right-header .profile div {
+    gap: 20px;
+  }
+
+  .menu-bar {
+    font-size: 2.5rem;
+  }
+
+  .admin-button {
+    padding: 2px 15px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .left-header .logo {
+    height: 55px;
+  }
+
+  /* RIGHT HEADER */
+  .right-header {
+    font-size: 2rem;
+    width: 115px;
+  }
+
+  .right-header.loggedin {
+    width: 205px;
+  }
+
+  .right-header .profile div {
+    gap: 25px;
+  }
+
+  .right-header .menu-bar {
+    font-size: 3rem;
+  }
+
+  .admin-button {
+    padding: 2px 16px;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .left-header .logo {
+    width: 180px;
+    height: 65px;
+  }
+
+  /* RIGHT HEADER */
+  .right-header {
+    font-size: 2.2rem;
+    width: 120px;
+  }
+
+  .right-header.loggedin {
+    width: 220px;
+  }
+
+  .profile-with-name {
+    padding: 0 5px 1px 15px;
+  }
+}

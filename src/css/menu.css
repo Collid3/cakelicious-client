@@ -1,0 +1,84 @@
+.menu {
+  position: absolute;
+  right: 10px;
+  top: 48px;
+  width: 120px;
+  background-color: dodgerblue;
+  border-radius: 5px;
+  outline: 1px solid white;
+  z-index: 2;
+  user-select: none;
+  font-size: 1.2rem;
+  overflow: hidden;
+}
+
+.menu ul li {
+  padding: 3px;
+  border-bottom: 1px solid white;
+  text-align: center;
+}
+
+.menu ul li:first-child {
+  padding-top: 3px;
+  border-radius: 5px 5px 0 0;
+}
+
+.menu ul .logout-btn {
+  background-color: rgb(241, 56, 56);
+}
+
+.menu ul li:hover {
+  cursor: pointer;
+  background-color: midnightblue;
+  color: white;
+}
+
+.classes-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 576px) {
+  .menu {
+    top: 50px;
+    width: 160px;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    top: 58px;
+    width: 200px;
+  }
+
+  .menu ul li {
+    font-size: 1.4rem;
+    padding: 6px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .menu {
+    top: 60px;
+    width: 220px;
+  }
+
+  .menu ul li {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    top: 70px;
+    width: 220px;
+  }
+
+  .menu ul li {
+    font-size: 1.8rem;
+  }
+}
