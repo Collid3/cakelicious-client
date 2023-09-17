@@ -23,11 +23,11 @@ export const DataProvider = ({ children }) => {
   const [mounted, setMounted] = useState(false);
 
   const api = axios.create({
-    baseURL: "https://cakelicious.onrender.com",
+    baseURL: "https://cakelicious-server.onrender.com",
   });
 
   const apiWithCred = axios.create({
-    baseURL: "https://cakelicious.onrender.com",
+    baseURL: "https://cakelicious-server.onrender.com",
     withCredentials: true,
     headers: {
       Authorization: `Bearer ${accessToken}`,
