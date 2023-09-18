@@ -8,8 +8,9 @@
   top: 0;
   width: 100%;
   max-width: 900px;
-  height: 100vh;
+  min-height: calc(100vh - 39px);
   margin: 0 auto;
+  padding-bottom: 3rem;
 }
 
 .Contacts-container > div {
@@ -142,7 +143,7 @@
 }
 
 .Contacts-container > section div ul li {
-  color: black;
+  color: white;
   font-weight: bold;
 }
 
@@ -209,7 +210,6 @@
 @media screen and (max-width: 1400px) {
   .Contacts-container {
     justify-content: center;
-    height: 100vh;
     padding-top: 3.5%;
   }
 
@@ -267,7 +267,7 @@
   }
 
   .contact-form-container textarea {
-    height: 110px;
+    height: 22rem;
   }
 }
 
@@ -318,15 +318,15 @@
   }
 
   .contact-form-container textarea {
-    height: 120px;
+    height: 20rem;
   }
 }
 
 @media screen and (max-width: 576px) {
   .Contacts-container {
-    height: auto;
-    min-height: 100vh;
-    padding-top: 10%;
+    min-height: auto;
+    padding-top: 15%;
+    padding-bottom: 3rem;
   }
 
   .Contacts-container > div {
