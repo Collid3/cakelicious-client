@@ -194,8 +194,6 @@ const Contacts = () => {
             required
           />
 
-          <input type="file" name="" id="" />
-
           <button type="submit">Submit</button>
         </form>
 

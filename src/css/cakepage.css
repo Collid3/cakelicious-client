@@ -303,3 +303,10 @@ input::-webkit-inner-spin-button {
     min-width: 400px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .quantity .plus,
+  .quantity .minus {
+    top: 5.5px;
+  }
+}
