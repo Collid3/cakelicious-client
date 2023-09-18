@@ -269,6 +269,10 @@
   .contact-form-container textarea {
     height: 22rem;
   }
+
+  .Contacts-container > section div {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -319,6 +323,10 @@
 
   .contact-form-container textarea {
     height: 20rem;
+  }
+
+  .Contacts-container > section div {
+    display: none;
   }
 }
 
