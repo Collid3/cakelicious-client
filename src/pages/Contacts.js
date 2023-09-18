@@ -156,7 +156,7 @@ const Contacts = () => {
           className="contact-form-container"
           onSubmit={(e) => handleSubmit(e)}
         >
-          <h2>Contact Us</h2>
+          <h2>Send Us A Message</h2>
 
           <p
             className={`${responseMessage.includes("sent") && "success"} ${
