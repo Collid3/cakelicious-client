@@ -63,7 +63,7 @@ body {
   height: 100vh;
   min-width: 320px;
   margin: 0 auto;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .home {

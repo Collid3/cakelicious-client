@@ -26,6 +26,8 @@ header {
 .left-header .logo {
   width: 80px;
   height: 45px;
+  display: flex;
+  align-items: center;
 }
 /* 
 .left-header .logo img {
