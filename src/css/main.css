@@ -184,7 +184,7 @@ main {
   }
 
   .cakes {
-    grid-template-columns: repeat(auto-fit, 40%);
+    grid-template-columns: repeat(auto-fit, 30%);
   }
 
   .cakes-main-container {
