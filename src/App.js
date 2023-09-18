@@ -58,6 +58,8 @@ function App() {
               <Route path="/*" element={<Navigate to="/" replace />} />
               {admin && <Route path="/admin/*" element={<Admin />} />}
             </Routes>
+
+            <Footer />
           </Suspense>
         </>
       )}

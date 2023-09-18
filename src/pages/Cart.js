@@ -117,7 +117,6 @@ const Cart = () => {
                           width: "max-content",
                           margin: "0 auto",
                           marginBottom: "5px",
-                          borderBottom: "2px solid black",
                         }}
                       >
                         <span style={{ textTransform: "capitalize" }}>

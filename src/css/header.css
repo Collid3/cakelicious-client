@@ -60,6 +60,10 @@ header {
   position: relative;
 }
 
+.cart-navigate a {
+  color: white;
+}
+
 .cart-items-number {
   background-color: blue;
   font-size: 1rem;
