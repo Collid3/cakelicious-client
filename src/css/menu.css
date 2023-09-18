@@ -2,18 +2,18 @@
   position: absolute;
   right: 10px;
   top: 48px;
-  width: 120px;
+  width: 160px;
   background-color: dodgerblue;
   border-radius: 5px;
   outline: 1px solid white;
   z-index: 2;
   user-select: none;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   overflow: hidden;
 }
 
 .menu ul li {
-  padding: 3px;
+  padding: 5px;
   border-bottom: 1px solid white;
   text-align: center;
 }

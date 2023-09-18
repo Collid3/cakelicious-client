@@ -9,6 +9,7 @@ header {
   z-index: 1;
   border-bottom: 2px solid white;
   background-color: steelblue;
+  padding: 0 1rem;
 }
 
 /* HEADER */
