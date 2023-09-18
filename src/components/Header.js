@@ -29,9 +29,7 @@ const Header = () => {
     <header>
       <section className="top-header">
         <div className="left-header">
-          <div className="logo">
-            <img src={Logo} alt="Logo" height={50} />
-          </div>
+          <h1 className="logo">Logo</h1>
         </div>
 
         <div className={`right-header ${loggedIn && "loggedin"}`}>

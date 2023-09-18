@@ -1,8 +1,6 @@
 import React, { useContext, useRef, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import DataContext from "../../Context/DataContext";
-import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
-import { auth, googleProvider } from "../../firebaseConfig";
 
 const SignIn = () => {
   const {
@@ -52,16 +50,6 @@ const SignIn = () => {
     }
   };
 
-  async function loginWithGoogle() {
-    const userCred = await signInWithPopup(auth, googleProvider);
-    setAccessToken(userCred.accessToken);
-    setUser({
-      accessToken: userCred.accessToken,
-      email: userCred.displayName,
-      emailVerified: false,
-    });
-  }
-
   const handleCancel = () => {
     setError(false);
     setErrorMessage("");
@@ -100,14 +88,6 @@ const SignIn = () => {
             <button onClick={handleLogin}>Submit</button>
             <button onClick={handleCancel}>Cancel</button>
           </div>
-
-          <button
-            className="signin-with-google "
-            type="button"
-            onClick={loginWithGoogle}
-          >
-            Login With Google
-          </button>
 
           <p className="redirect redirect-signin">
             New to Cakelicious? <Link to="/signup">Create account</Link>

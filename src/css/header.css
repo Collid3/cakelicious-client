@@ -27,11 +27,11 @@ header {
   width: 80px;
   height: 45px;
 }
-
+/* 
 .left-header .logo img {
   height: 100%;
   object-fit: cover;
-}
+} */
 
 /* RIGHT SIDE HEADER */
 .right-header {

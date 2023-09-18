@@ -57,7 +57,7 @@ const Wedding = () => {
                       <figcaption>
                         <h3>{cake.name}</h3>
                         <div className="price-buy">
-                          <p>From R{cake.price.toFixed(2)}</p>
+                          <p>From R{cake.price}</p>
                           <div className="cake-buttons">
                             <Link to={`/products/${cake._id}`}>
                               <button>Select</button>
