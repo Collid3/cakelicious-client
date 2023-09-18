@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Merriweather+Sans:wght@300&family=Signika:wght@300&display=swap");
 
 .cake-page-container {
-  height: calc(100vh - 39px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,6 +18,7 @@
 
 .cake-page-container h1 {
   margin-bottom: 2rem;
+  margin-top: 4rem;
 }
 
 .cake-page {
@@ -206,12 +206,10 @@ input::-webkit-inner-spin-button {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 0 5px;
   width: 100px;
-  box-shadow: 0 0 3px white;
 }
 
 .cake-page-submit-form button:nth-child(3) {
-  background-color: red;
-  box-shadow: 0 0 3px white;
+  background-color: rgb(235, 0, 0);
 }
 
 /* MEDIA QUERIES */
