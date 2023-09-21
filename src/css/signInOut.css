@@ -77,7 +77,7 @@
 }
 
 .buttons {
-  width: 100%;
+  width: 90%;
   display: flex;
   gap: 5px;
   justify-content: center;
@@ -87,14 +87,14 @@
 .buttons button {
   font-size: 1.2rem;
   width: 100%;
-  padding: 4px;
+  padding: 7px;
   font-weight: bold;
-  background-color: rgb(0, 120, 0);
+  background-color: rgb(0, 160, 0);
   color: white;
 }
 
 .buttons :nth-child(2) {
-  background-color: rgb(225, 0, 0);
+  background-color: rgb(235, 0, 0);
 }
 
 .buttons :nth-child(2):hover {
@@ -230,7 +230,7 @@
 
   .buttons button {
     font-size: 1.4rem;
-    padding: 7px;
+    padding: 8px;
   }
 
   .signin-with-google {
@@ -250,7 +250,7 @@
   }
 
   .buttons button {
-    padding: 8px;
+    padding: 10px;
   }
 
   .signin-with-google {
