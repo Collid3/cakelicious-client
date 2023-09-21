@@ -266,4 +266,8 @@ main {
   .cakes {
     grid-template-columns: repeat(auto-fit, 45%);
   }
+
+  footer {
+    font-size: 1.4rem;
+  }
 }
